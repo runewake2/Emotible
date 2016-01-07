@@ -99,10 +99,30 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\BaseViewModel.cs" />
+    <Compile Include="Models\DataModels\DimensionsDataModel.cs" />
+    <Compile Include="Models\DataModels\EmoteDataModel.cs" />
+    <Compile Include="Models\ViewModels\DimensionsViewModel.cs" />
+    <Compile Include="Models\ViewModels\EmoteViewModel.cs" />
+    <Compile Include="Models\ViewModels\SearchBoxFlyoutViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\DynamicGridView.cs" />
+    <Compile Include="Views\EmoteText.xaml.cs">
+      <DependentUpon>EmoteText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyoutBoxControl.xaml.cs">
+      <DependentUpon>FlyoutBoxControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewEmoteFlyoutControl.xaml.cs">
+      <DependentUpon>NewEmoteFlyoutControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SearchBoxFlyoutControl.xaml.cs">
+      <DependentUpon>SearchBoxFlyoutControl.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -131,7 +151,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\CustomStyleTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Views\EmoteText.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FlyoutBoxControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewEmoteFlyoutControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SearchBoxFlyoutControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

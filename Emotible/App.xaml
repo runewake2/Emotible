@@ -5,4 +5,17 @@
     xmlns:local="using:Emotible"
     RequestedTheme="Light">
 
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <GridLength x:Key="TabRowHeight">80</GridLength>
+                    <Thickness x:Key="FlyoutItemMargin">0,4</Thickness>
+                </ResourceDictionary>
+
+                <ResourceDictionary Source="Views/CustomStyleTemplates.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
 </Application>
